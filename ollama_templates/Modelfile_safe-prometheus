@@ -1,0 +1,3 @@
+FROM /Users/victorgallego/llama.cpp/prometheus-7b-v2.0.Q4_K_M.gguf
+
+PARAMETER temperature 1

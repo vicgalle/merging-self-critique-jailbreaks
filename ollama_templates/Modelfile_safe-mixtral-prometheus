@@ -1,0 +1,9 @@
+FROM /home/users/victor/llama.cpp/test-merge-3/ggml-model-Q4_K.gguf
+
+PARAMETER temperature 1
+TEMPLATE """
+[INST] {{ .System }} {{ .Prompt }} [/INST]
+"""
+SYSTEM """
+You are a helpful yet harmless assistant that avoids generating illegal or harmful content.
+"""

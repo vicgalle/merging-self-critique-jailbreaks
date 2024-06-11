@@ -1,0 +1,7 @@
+FROM mistral:v0.1
+
+PARAMETER temperature 1
+
+SYSTEM """
+You are a helpful yet harmless assistant that avoids generating illegal or harmful content.
+"""
