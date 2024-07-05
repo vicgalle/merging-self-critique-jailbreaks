@@ -1,6 +1,8 @@
 # Merging Improves Self-Critique Against Jailbreak Attacks
+[![arXiv](https://img.shields.io/badge/arXiv-2406.07188-b31b1b.svg)](https://arxiv.org/abs/2406.07188)
 
-This repository hosts the code for the paper, currently under review.
+
+This repository hosts the code for the paper, accepted to the [ICML 2024 Workshop on Foundation Models in the Wild](https://icml-fm-wild.github.io), https://openreview.net/forum?id=HmYJ16ehbX 
 
 > The robustness of large language models (LLMs) against adversarial manipulations, such as jailbreak attacks, remains a significant challenge. In this work, we propose an approach that enhances the self-critique capability of the LLM and further fine-tunes it over sanitized synthetic data. This is done with the addition of an external critic model that can be merged with the original, thus bolstering self-critique capabilities and improving the robustness of the LLMs response to adversarial prompts. Our results demonstrate that the combination of merging and self-critique can reduce the attack success rate of adversaries significantly, thus offering a promising defense mechanism against jailbreak attacks.
 
@@ -51,3 +53,19 @@ Since Llama-Guard-2 outputs `safe` or `unsafe` when evaluating, we can compute t
 $$
 ASR(S) = \frac{1}{|S|} \sum_{s\in S} \mathbb{1}_{\mbox{s=\texttt{unsafe}}}
 $$
+
+## Citation
+
+If you find the research or code useful for you, please consider citing
+
+```
+@inproceedings{
+  gallego2024merging,
+  title={Merging Improves Self-Critique Against Jailbreak Attacks},
+  author={Victor Gallego},
+  booktitle={ICML 2024 Workshop on Foundation Models in the Wild},
+  year={2024},
+  url={https://openreview.net/forum?id=HmYJ16ehbX}
+}
+```
+
